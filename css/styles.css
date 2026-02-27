@@ -1,0 +1,163 @@
+/* ===== VARIABLES ===== */
+:root{
+  --vino: #3b141c;
+  --naranja: #f3961c;
+  --blanco: #ffffff;
+  --gris: #cccccc;
+  --texto: #252525;
+}
+
+/* ===== RESET ===== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Miniver", sans-serif;
+}
+
+img{
+  display: block;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  background: var(--vino);
+  color: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  height: 72px;
+}
+
+/* LADO IZQUIERDO */
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand{
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* LADO DERECHO */
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right a{
+  color: var(--blanco);
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a:hover{
+  color: var(--naranja);
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.nav-right a{
+  font-family: cursive;
+}
+
+/* ICONOS */
+.nav-icon{
+  height: 20px;     /* 🔥 Tamaño proporcional a la tipografía */
+  width: auto;
+  object-fit: contain;
+}
+
+.icon-link{
+  display: flex;
+  align-items: center;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+  background: var(--vino);
+  height: calc(100vh - 72px);
+  display: grid;
+  grid-template-columns: 60% 40%;
+  color: var(--blanco);
+}
+
+/* COLUMNA IZQUIERDA */
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+
+.hero-left h1{
+  font-size: 6rem;
+  color: var(--naranja);
+  margin-bottom: 20px;
+  text-align:justify;
+}
+
+.hero-left h2{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--blanco);
+  font-family: cursive;
+  margin-top: 50px;
+}
+
+.hero-left p{
+  font-size: 1rem;
+  color: var(--gris);
+  max-width: 500px;
+  font-family: cursive;
+  margin-top: 30px;
+  text-align:center;
+}
+
+.hero-buttons{
+  display: flex;
+  gap: 100px;
+  margin-top: 70px;
+  font-family: cursive;
+}
+
+.btn-primary{
+  background: var(--naranja);
+  color: var(--blanco);
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover{
+  background: #d87f0f;
+}
+
+/* COLUMNA DERECHA */
+.hero-right{
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-right img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
