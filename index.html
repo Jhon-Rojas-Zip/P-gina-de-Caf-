@@ -8,6 +8,9 @@
     <!-- Google Font requerida -->
     <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
 
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/c08c5c0912.js" crossorigin="anonymous"></script>
+
     <!-- CSS principal -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -16,22 +19,22 @@
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar">
         <div class="nav-left">
-            <img src="./icons/cafe.png" alt="Icono cafe" class="nav-icon">
+            <i class="fa-solid fa-mug-hot nav-fa"></i>
             <span class="brand">Coffe</span>
         </div>
 
         <div class="nav-right">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="bold">Home</a>
             <a href="menu.html">Menu</a>
             <a href="galeria.html">Galeria</a>
-            <a href="contacto.html" class="bold">Contáctenos</a>
+            <a href="contacto.html">Contáctenos</a>
 
             <a href="carrito.html" class="icon-link">
-                <img src="./icons/carrito.png" alt="Carrito" class="nav-icon">
+                <i class="fa-solid fa-cart-shopping nav-fa"></i>
             </a>
 
             <a href="login.html" class="icon-link">
-                <img src="./icons/inicio.png" alt="Login" class="nav-icon">
+                <i class="fa-solid fa-user nav-fa"></i>
             </a>
         </div>
     </nav>
@@ -40,14 +43,17 @@
     <section class="hero">
         <div class="hero-left">
             <h1>El mejor café</h1>
+
             <h2>Haz tu día genial con nuestro especial Coffe</h2>
+
             <p>
-                Bienvenido al paraiso del cafe donde cada grano cuenta una historia y cada taza despierta una alegria
+                Bienvenido al paraíso del café donde cada grano cuenta una historia
+                y cada taza despierta una alegría.
             </p>
 
             <div class="hero-buttons">
                 <a href="menu.html" class="btn-primary">Ordenar ahora</a>
-                <a href="contacto.html" class="btn-primary">Contáctenos</a>
+                <a href="contacto.html" class="btn-primary btn-outline">Contáctenos</a>
             </div>
         </div>
 
@@ -56,7 +62,6 @@
         </div>
     </section>
 
-    <!-- JS -->
     <script src="./js/script.js"></script>
 </body>
 </html>

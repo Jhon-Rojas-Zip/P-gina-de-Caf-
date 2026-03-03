@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Shop | Carrito</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <i class="fa-solid fa-mug-hot nav-fa"></i>
+            <span class="brand">Coffe</span>
+        </div>
+
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contactenos</a>
+
+            <a href="carrito.html" class="bold icon-link">
+                <i class="fa-solid fa-cart-shopping nav-fa"></i>
+            </a>
+
+            <a href="login.html" class="icon-link">
+                <i class="fa-solid fa-user nav-fa"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===== CARRITO ===== -->
+    <section class="cart-section">
+
+        <div class="cart-container">
+
+            <!-- ===== COLUMNA IZQUIERDA ===== -->
+            <div class="cart-left">
+
+                <div class="cart-header">
+                    <i class="fa-solid fa-cart-shopping cart-big-icon"></i>
+                    <h1>Tu carrito</h1>
+                </div>
+
+                <p class="cart-subtitle">
+                    Revisa tus productos antes de finalizar tu compra.
+                </p>
+
+                <!-- TARJETA ESTADO VACÍO -->
+                <div class="cart-empty-card">
+                <i class="fa-solid fa-cart-shopping empty-icon"></i>
+
+                <h3>Tu carrito está vacío</h3>
+                <p>¡Descubre productos increíbles y comienza tu compra!</p>
+
+                <a href="menu.html" class="btn-explore">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Explorar Productos
+                </a>
+            </div>
+
+            </div>
+
+            <!-- ===== COLUMNA DERECHA ===== -->
+            <div class="cart-right">
+
+                <!-- TODO DENTRO DE UNA SOLA TARJETA -->
+                <h2 class="summary-title">
+                    <i class="fa-regular fa-box-open"></i>
+                    Resumen del pedido
+                </h2>
+
+                    <div class="summary-line">
+                        <span>Subtotal</span>
+                        <span>$0</span>
+                    </div>
+
+                    <div class="summary-line">
+                        <span>Envío</span>
+                        <span class="free">Gratis</span>
+                    </div>
+
+                    <!-- TOTAL -->
+                    <div class="summary-total-box">
+                        <span class="total-label">Total</span>
+                        <span class="total-value">$0</span>
+                    </div>
+
+                    <hr>
+
+                    <!-- INFORMACIÓN PEDIDO -->
+                    <h3 class="info-title">
+                        <i class="fa-regular fa-location-dot"></i>
+                        Información de pedido
+                    </h3>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Dirección completa">
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ciudad">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Código postal">
+                        </div>
+                    </div>
+
+                    <div class="form-group select-group">
+                        <select>
+                            <option disabled selected>Método de pago</option>
+                            <option>💳 Tarjeta de crédito / débito</option>
+                            <option>🏦 Transferencia bancaria</option>
+                            <option>📦 Contra entrega</option>
+                            <option>📱 Nequi / Daviplata</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-checkout">
+                        <i class="fa-regular fa-check"></i>
+                        Finalizar compra
+                    </button>
+
+                    <!-- MENSAJES SEGURIDAD -->
+                    <div class="trust-info">
+                        <p><i class="fa-solid fa-box-archive"></i> Compra segura y protegida</p>
+                        <p><i class="fa-solid fa-shield-heart"></i> Envío gratis en compras > $100.000 COP</p>
+                        <p><i class="fa-solid fa-circle-user"></i> Atención al cliente 24/7</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

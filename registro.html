@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Shop | Registro</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <i class="fa-solid fa-mug-hot nav-fa"></i>
+            <span class="brand">Coffe</span>
+        </div>
+
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contactenos</a>
+
+            <a href="carrito.html" class="icon-link">
+                <i class="fa-solid fa-cart-shopping nav-fa"></i>
+            </a>
+
+            <a href="login.html" class="icon-link">
+                <i class="fa-solid fa-user nav-fa"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===== REGISTRO ===== -->
+    <section class="register-section">
+
+        <div class="register-container">
+
+            <!-- TARJETA 1 -->
+            <div class="register-card">
+
+                <div class="register-header">
+                    <div class="register-icon">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <h2>¡Únete a Coffe Shop!</h2>
+                </div>
+
+                <div class="form-group">
+                    <label>Número de identificación</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="name-grid">
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Apellidos</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Edad</label>
+                    <input type="number" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Correo electrónico</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="tel" required>
+                </div>
+
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="register-card register-card-secondary">
+
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <input type="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Confirmar contraseña</label>
+                    <input type="password" required>
+                </div>
+
+                <p class="terms-text">
+                    Acepto los 
+                    <a href="#">términos y condiciones</a> 
+                    y la 
+                    <a href="#">política de privacidad</a>.
+                </p>
+
+                <button type="submit" class="btn-register">
+                    Registrarme
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- IMÁGENES DECORATIVAS -->
+        <div class="register-decoration">
+            <div class="refresh-text">
+                Refresca tu<br>paladar
+            </div>
+            
+            <img src="./img/cold-beverages.png" class="img-back" alt="Bebidas frías">
+            <img src="./img/refreshment.png" class="img-front" alt="Decoración superpuesta">
+        </div>
+
+    </section>
+
+</body>
+</html>
