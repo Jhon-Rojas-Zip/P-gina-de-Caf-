@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
 
     <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c08c5c0912.js" crossorigin="anonymous"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -18,26 +18,38 @@
 
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar">
-        <div class="nav-left">
-            <i class="fa-solid fa-mug-hot nav-fa"></i>
-            <span class="brand">Coffe</span>
-        </div>
+    <!-- Toggle oculto -->
+    <input type="checkbox" id="menu-toggle">
 
-        <div class="nav-right">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="contacto.html">Contactenos</a>
+    <!-- Logo -->
+    <div class="nav-left">
+        <i class="fa-solid fa-mug-hot nav-fa"></i>
+        <span class="brand">Coffe</span>
+    </div>
 
-            <a href="carrito.html" class="bold icon-link">
-                <i class="fa-solid fa-cart-shopping nav-fa"></i>
-            </a>
+    <!-- Botón hamburguesa -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
-            <a href="login.html" class="icon-link">
-                <i class="fa-solid fa-user nav-fa"></i>
-            </a>
-        </div>
-    </nav>
+    <!-- Menú -->
+    <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contáctenos</a>
+
+        <a href="carrito.html" class="icon-link">
+            <i class="fa-solid fa-cart-shopping nav-fa"></i>
+        </a>
+
+        <a href="login.html" class="icon-link">
+            <i class="fa-solid fa-user nav-fa"></i>
+        </a>
+    </div>
+</nav>
 
     <!-- ===== CARRITO ===== -->
     <section class="cart-section">
@@ -76,7 +88,7 @@
 
                 <!-- TODO DENTRO DE UNA SOLA TARJETA -->
                 <h2 class="summary-title">
-                    <i class="fa-regular fa-box-open"></i>
+                    <i class="fa-solid fa-box-open"></i>
                     Resumen del pedido
                 </h2>
 
@@ -100,27 +112,31 @@
 
                     <!-- INFORMACIÓN PEDIDO -->
                     <h3 class="info-title">
-                        <i class="fa-regular fa-location-dot"></i>
+                        <i class="fa-solid fa-location-dot"></i>
                         Información de pedido
                     </h3>
 
                     <div class="form-group">
-                        <input type="text" placeholder="Dirección completa">
+                        <label>Dirección completa</label>
+                        <input type="text">
                     </div>
 
                     <div class="row">
                         <div class="form-group">
-                            <input type="text" placeholder="Ciudad">
+                            <label>Ciudad</label>
+                            <input type="text">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" placeholder="Código postal">
+                            <label>Código Postal</label>
+                            <input type="text">
                         </div>
                     </div>
 
                     <div class="form-group select-group">
+                        <label>Método de pago</label>
                         <select>
-                            <option disabled selected>Método de pago</option>
+                            <option disabled selected>Selecciona una opción</option>
                             <option>💳 Tarjeta de crédito / débito</option>
                             <option>🏦 Transferencia bancaria</option>
                             <option>📦 Contra entrega</option>
@@ -129,15 +145,15 @@
                     </div>
 
                     <button class="btn-checkout">
-                        <i class="fa-regular fa-check"></i>
+                        <i class="fa-solid fa-check"></i>
                         Finalizar compra
                     </button>
 
                     <!-- MENSAJES SEGURIDAD -->
                     <div class="trust-info">
-                        <p><i class="fa-solid fa-box-archive"></i> Compra segura y protegida</p>
-                        <p><i class="fa-solid fa-shield-heart"></i> Envío gratis en compras > $100.000 COP</p>
-                        <p><i class="fa-solid fa-circle-user"></i> Atención al cliente 24/7</p>
+                        <p><i class="fa-solid fa-box-open"></i> Compra segura y protegida</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Envío gratis en compras > $100.000 COP</p>
+                        <p><i class="fa-solid fa-check"></i> Atención al cliente 24/7</p>
                     </div>
 
                 </div>
